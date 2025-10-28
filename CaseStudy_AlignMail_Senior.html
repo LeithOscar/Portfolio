@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AlignMail — Senior Product Designer Case Study — Leith Óscar</title>
+  <style>
+    :root{--bg:#ffffff;--muted:#6b7280;--accent:#0ea5a4;--dark:#0f172a}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0; color:var(--dark); background:var(--bg); line-height:1.55}
+    header.hero{background:linear-gradient(135deg,#0ea5a4 0%,#14b8a6 100%);color:#fff;padding:72px 20px;text-align:center;position:relative;overflow:hidden}
+    header.hero h1{font-size:2.2rem;margin:8px 0 10px}
+    header.hero p{max-width:760px;margin:0 auto 14px;font-size:1.02rem}
+    .chip{display:inline-block;background:rgba(255,255,255,0.13);color:#fff;border-radius:999px;padding:6px 12px;font-weight:600;margin:6px 6px;font-size:13px}
+    .hero-kpi{display:flex;justify-content:center;gap:14px;margin-top:16px;flex-wrap:wrap}
+    .kpi{background:rgba(255,255,255,0.10);padding:12px 18px;border-radius:10px;min-width:140px;text-align:center}
+    .kpi strong{display:block;font-size:1.3rem}
+    .container{max-width:980px;margin:0 auto;padding:28px 20px}
+    .card{background:#fff;border-radius:12px;padding:18px;margin-bottom:22px;box-shadow:0 1px 3px rgba(15,23,42,0.06)}
+    h2{font-size:18px;margin:0 0 10px}
+    .two-col{display:grid;grid-template-columns:2fr 1fr;gap:20px;align-items:start}
+    .metrics{display:flex;gap:12px;flex-wrap:wrap;margin:10px 0}
+    .metric{background:#f8fafb;padding:12px;border-radius:10px;min-width:140px;text-align:center}
+    .metric strong{display:block;color:var(--accent);font-size:18px}
+    .aside-card{background:#f8fafb;padding:14px;border-radius:12px}
+    .footer{margin-top:36px;padding-top:18px;border-top:1px solid #e5e7eb;color:var(--muted);text-align:center}
+    @media(max-width:820px){.two-col{grid-template-columns:1fr} header.hero{padding:40px 16px} header.hero h1{font-size:1.6rem}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <span class="chip">Cliente: Wolters Kluwer España</span>
+      <span class="chip">Proyecto: Unificación de plantillas de correo</span>
+      <span class="chip">Duración: 1 semana</span>
+    </div>
+    <h1>AlignMail — Estandarización y optimización de plantillas HTML de correo</h1>
+    <p>Proyecto enfocado en alinear el diseño, código y mantenimiento de todas las plantillas de correo electrónico de la organización, mejorando la consistencia visual, el rendimiento y la autonomía de los equipos.</p>
+    <div class="hero-kpi">
+      <div class="kpi"><strong>+99%</strong><div>Implementación más rápida</div></div>
+      <div class="kpi"><strong>100%</strong><div>Consistencia visual</div></div>
+      <div class="kpi"><strong>1 semana</strong><div>De ejecución</div></div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="card">
+      <h2>Contexto y objetivo</h2>
+      <p>Los equipos de producto y marketing utilizaban múltiples plantillas de correo electrónico, desarrolladas de forma independiente para distintas aplicaciones. Esto provocaba inconsistencias en la identidad visual, errores en la maquetación y pérdida de tiempo en cada actualización.</p>
+      <p>El objetivo fue crear un sistema unificado de plantillas HTML con cabeceras y pies estandarizados, gestionado desde un entorno centralizado (SendGrid), garantizando una actualización ágil y una experiencia coherente para todos los productos.</p>
+    </section>
+
+    <div class="two-col">
+      <div>
+        <section class="card">
+          <h2>Problema</h2>
+          <p>Las plantillas existentes presentaban inconsistencias de marca, errores visuales y una falta de trazabilidad que ralentizaba la publicación de campañas y notificaciones automáticas.</p>
+        </section>
+
+        <section class="card">
+          <h2>Investigación</h2>
+          <p>Se recopilaron y auditaron todas las plantillas utilizadas en los distintos productos. Se documentaron estilos, estructuras HTML y puntos de mejora, identificando redundancias y errores comunes.</p>
+          <ul>
+            <li>Inconsistencia de tipografía y colores corporativos.</li>
+            <li>Cabeceras y pies con versiones distintas.</li>
+            <li>Ausencia de control de versiones o IDs únicos en SendGrid.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Definición</h2>
+          <p>Se definieron los principales tipos de comunicación (transaccionales, promocionales, informativos) y se estableció un estándar visual y técnico para todas las plantillas. Se codificaron en HTML y se vincularon con SendGrid para trazabilidad y gestión modular.</p>
+        </section>
+
+        <section class="card">
+          <h2>Ideación y diseño</h2>
+          <p>Se diseñó un sistema visual modular, documentando componentes reutilizables:</p>
+          <ul>
+            <li>Botones, enlaces y espaciadores homogéneos.</li>
+            <li>Compatibilidad con Light y Dark Mode.</li>
+            <li>Soporte para distintos clientes de correo.</li>
+          </ul>
+          <p>Los prototipos se validaron con el equipo de desarrollo y marketing mediante revisiones iterativas.</p>
+        </section>
+
+        <section class="card">
+          <h2>Resultados e impacto</h2>
+          <div class="metrics">
+            <div class="metric"><strong>+99%</strong><div>Implementación más rápida</div></div>
+            <div class="metric"><strong>100%</strong><div>Separación de responsabilidades</div></div>
+            <div class="metric"><strong>✔</strong><div>Unificación de branding</div></div>
+          </div>
+          <p>El proyecto permitió reducir drásticamente los tiempos de actualización y eliminar inconsistencias visuales entre productos. Marketing, diseño y desarrollo trabajan ahora con un mismo sistema validado y mantenible.</p>
+        </section>
+
+        <section class="card">
+          <h2>Lecciones aprendidas</h2>
+          <ul>
+            <li>Documentar el HTML base acelera la colaboración entre diseño y desarrollo.</li>
+            <li>El uso de IDs únicos en SendGrid facilita la trazabilidad.</li>
+            <li>Los sistemas modulares reducen la deuda técnica y mejoran la escalabilidad.</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside>
+        <div class="aside-card card">
+          <h3>Datos del proyecto</h3>
+          <ul>
+            <li>Cliente: Wolters Kluwer España</li>
+            <li>Duración: 1 semana</li>
+            <li>Rol: UX Product Designer</li>
+            <li>Herramientas: Figma, SendGrid, HTML, Postman</li>
+          </ul>
+        </div>
+
+        <div class="aside-card" style="margin-top:14px">
+          <h3>Artifacts</h3>
+          <ul>
+            <li><a href="#">Documentación de componentes</a></li>
+            <li><a href="#">Repositorio de plantillas HTML</a></li>
+          </ul>
+        </div>
+
+        <div class="aside-card" style="margin-top:14px">
+          <h3>Contacto</h3>
+          <p><strong>Leith Óscar</strong><br/>Senior Product Designer · Barcelona<br/><a href="mailto:leith@example.com">leith@example.com</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="footer">© Leith Óscar — Senior Product Designer</div>
+  </div>
+</body>
+</html>
