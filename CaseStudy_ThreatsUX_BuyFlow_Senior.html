@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Threats UX / BuyFlow — Senior Product Designer Case Study — Leith Óscar</title>
+  <style>
+    :root{--bg:#ffffff;--muted:#6b7280;--accent:#0ea5a4;--dark:#0f172a}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0; color:var(--dark); background:var(--bg); line-height:1.55}
+    header.hero{background:linear-gradient(135deg,#0ea5a4 0%,#14b8a6 100%);color:#fff;padding:72px 20px;text-align:center;position:relative;overflow:hidden}
+    header.hero h1{font-size:2.2rem;margin:8px 0 10px}
+    header.hero p{max-width:760px;margin:0 auto 14px;font-size:1.02rem}
+    .chip{display:inline-block;background:rgba(255,255,255,0.13);color:#fff;border-radius:999px;padding:6px 12px;font-weight:600;margin:6px 6px;font-size:13px}
+    .hero-kpi{display:flex;justify-content:center;gap:14px;margin-top:16px;flex-wrap:wrap}
+    .kpi{background:rgba(255,255,255,0.10);padding:12px 18px;border-radius:10px;min-width:140px;text-align:center}
+    .kpi strong{display:block;font-size:1.3rem}
+    .container{max-width:980px;margin:0 auto;padding:28px 20px}
+    .card{background:#fff;border-radius:12px;padding:18px;margin-bottom:22px;box-shadow:0 1px 3px rgba(15,23,42,0.06)}
+    h2{font-size:18px;margin:0 0 10px}
+    .two-col{display:grid;grid-template-columns:2fr 1fr;gap:20px;align-items:start}
+    .metrics{display:flex;gap:12px;flex-wrap:wrap;margin:10px 0}
+    .metric{background:#f8fafb;padding:12px;border-radius:10px;min-width:140px;text-align:center}
+    .metric strong{display:block;color:var(--accent);font-size:18px}
+    .aside-card{background:#f8fafb;padding:14px;border-radius:12px}
+    .footer{margin-top:36px;padding-top:18px;border-top:1px solid #e5e7eb;color:var(--muted);text-align:center}
+    @media(max-width:820px){.two-col{grid-template-columns:1fr} header.hero{padding:40px 16px} header.hero h1{font-size:1.6rem}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <span class="chip">E‑commerce · Mobile UX</span>
+      <span class="chip">Senior Product Designer</span>
+      <span class="chip">Duración: 1 mes</span>
+    </div>
+    <h1>Threats UX / BuyFlow — Optimización del flujo de compra móvil</h1>
+    <p>Proyecto centrado en mejorar la conversión móvil de una tienda online de moda mediante un rediseño del flujo de selección de talla, color y compra, reduciendo la fricción y aumentando la confianza del usuario.</p>
+    <div class="hero-kpi">
+      <div class="kpi"><strong>+14%</strong><div>Conversión móvil</div></div>
+      <div class="kpi"><strong>-31%</strong><div>Devoluciones por talla</div></div>
+      <div class="kpi"><strong>↓23%</strong><div>Tiempo para añadir al carrito</div></div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="card">
+      <h2>Contexto y objetivo</h2>
+      <p>Las tasas de conversión móvil estaban cayendo, especialmente en páginas de producto. Los usuarios no se sentían seguros al elegir su talla, lo que generaba abandonos antes del checkout. El objetivo fue rediseñar el flujo móvil para hacerlo más rápido, intuitivo y confiable.</p>
+    </section>
+
+    <div class="two-col">
+      <div>
+        <section class="card">
+          <h2>Problema</h2>
+          <p>El selector de talla generaba dudas y errores. Más del 50% de los usuarios abandonaban la página tras interactuar con él. El botón “Añadir al carrito” no era visible sin hacer scroll, y en pantallas pequeñas aparecían errores al combinar color y talla.</p>
+        </section>
+
+        <section class="card">
+          <h2>Research</h2>
+          <p>Se realizó un análisis heurístico y de datos mediante heatmaps y métricas de embudo:</p>
+          <ul>
+            <li>+50% de abandono tras el selector de talla.</li>
+            <li>CTA “Añadir al carrito” fuera del viewport inicial.</li>
+            <li>Errores de selección en pantallas &lt; 360px.</li>
+          </ul>
+          <p>Entrevistas con 8 usuarios (18–40 años):</p>
+          <blockquote>“Nunca sé qué talla elegir, me resulta estresante.”</blockquote>
+          <blockquote>“Quiero decidir rápido sin pensarlo demasiado.”</blockquote>
+          <blockquote>“Si la página se ve desordenada, cierro.”</blockquote>
+        </section>
+
+        <section class="card">
+          <h2>Definición</h2>
+          <p>Los usuarios necesitaban poder elegir talla y color de forma rápida, entender si el producto les quedaría bien sin salir de la página, y sentir confianza antes de comprar.</p>
+          <p><strong>How might we…</strong></p>
+          <ul>
+            <li>¿Cómo ayudamos a encontrar la talla correcta fácilmente?</li>
+            <li>¿Cómo hacemos visible y accesible el botón de compra?</li>
+            <li>¿Cómo reducimos la indecisión en páginas móviles?</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Ideación</h2>
+          <p>Flujos paso a paso con feedback inmediato y microcopy empático. Se exploraron tres direcciones de diseño:</p>
+          <ul>
+            <li>Sugerencia de talla inteligente basada en compras previas.</li>
+            <li>Botón “Añadir al carrito” fijo (sticky) al hacer scroll.</li>
+            <li>Galería simplificada con menos distracciones.</li>
+          </ul>
+          <p>Conceptos clave:</p>
+          <ul>
+            <li>Tooltip con recomendación de talla: “Talla recomendada: M según tu último pedido.”</li>
+            <li>Botón flotante visible permanentemente.</li>
+            <li>Selectores de color/talla con jerarquía visual clara.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Diseño y validación</h2>
+          <p>Se construyó un prototipo en Figma cubriendo todo el flujo móvil: navegación, selección de talla/color y checkout inicial.</p>
+          <p>Tests con Maze y sesiones moderadas (6 usuarios):</p>
+          <ul>
+            <li>⏱ Tiempo promedio para añadir al carrito: 36s (↓23%).</li>
+            <li>👍 83% completaron el flujo sin ayuda.</li>
+            <li>🔁 Errores de talla reducidos del 17% al 4%.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Diseño final</h2>
+          <p>Página de producto con:</p>
+          <ul>
+            <li>Galería swipeable de imágenes.</li>
+            <li>Botón CTA sticky.</li>
+            <li>Tooltip de talla y feedback inmediato.</li>
+            <li>Mini carrito flotante con resumen y acciones rápidas.</li>
+            <li>Accesibilidad mejorada (contraste, tap targets, animaciones reducidas).</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Impacto</h2>
+          <div class="metrics">
+            <div class="metric"><strong>+14%</strong><div>Conversión móvil</div></div>
+            <div class="metric"><strong>-31%</strong><div>Devoluciones por talla</div></div>
+            <div class="metric"><strong>+83%</strong><div>Usuarios completaron sin ayuda</div></div>
+          </div>
+          <p>El rediseño mejoró la conversión móvil y redujo errores de selección. Los usuarios reportaron mayor confianza al comprar y menos frustración durante el proceso.</p>
+        </section>
+
+        <section class="card">
+          <h2>Reflexión</h2>
+          <p>Este proyecto demostró que un buen UX no siempre depende de grandes innovaciones, sino de microinteracciones claras. En moda, reducir fricción genera confianza, y la confianza impulsa la conversión.</p>
+        </section>
+      </div>
+
+      <aside>
+        <div class="aside-card card">
+          <h3>Datos del proyecto</h3>
+          <ul>
+            <li>Sector: E‑commerce</li>
+            <li>Duración: 1 mes</li>
+            <li>Rol: UX Product Designer</li>
+            <li>Equipo: UX, Developers, Product Owner</li>
+            <li>Herramientas: Figma, Maze</li>
+          </ul>
+        </div>
+
+        <div class="aside-card" style="margin-top:14px">
+          <h3>Prototipo</h3>
+          <ul>
+            <li><a href="https://www.figma.com/proto/Hqp7lLR3NznqSPh1styRsr/Frictionless-Fit?node-id=1-2&t=t3VPuB94HfGCokCF-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank">Ver en Figma</a></li>
+          </ul>
+        </div>
+
+        <div class="aside-card" style="margin-top:14px">
+          <h3>Contacto</h3>
+          <p><strong>Leith Óscar</strong><br/>Senior Product Designer · Barcelona<br/><a href="mailto:leith@example.com">leith@example.com</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="footer">© Leith Óscar — Senior Product Designer</div>
+  </div>
+</body>
+</html>

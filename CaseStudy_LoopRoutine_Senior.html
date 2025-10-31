@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loop Routine — Senior Product Designer Case Study — Leith Óscar</title>
+  <style>
+    :root{--bg:#ffffff;--muted:#6b7280;--accent:#0ea5a4;--dark:#0f172a}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0; color:var(--dark); background:var(--bg); line-height:1.55}
+    header.hero{background:linear-gradient(135deg,#0ea5a4 0%,#14b8a6 100%);color:#fff;padding:72px 20px;text-align:center;position:relative;overflow:hidden}
+    header.hero h1{font-size:2.2rem;margin:8px 0 10px}
+    header.hero p{max-width:760px;margin:0 auto 14px;font-size:1.02rem}
+    .chip{display:inline-block;background:rgba(255,255,255,0.13);color:#fff;border-radius:999px;padding:6px 12px;font-weight:600;margin:6px 6px;font-size:13px}
+    .hero-kpi{display:flex;justify-content:center;gap:14px;margin-top:16px;flex-wrap:wrap}
+    .kpi{background:rgba(255,255,255,0.10);padding:12px 18px;border-radius:10px;min-width:140px;text-align:center}
+    .kpi strong{display:block;font-size:1.3rem}
+    .private-banner{display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(255,255,255,0.1);color:white;padding:10px 16px;margin-top:18px;border-radius:10px;font-size:0.95rem;flex-wrap:wrap}
+    .private-banner a{color:white;font-weight:600;text-decoration:underline}
+    .container{max-width:980px;margin:0 auto;padding:28px 20px}
+    .card{background:#fff;border-radius:12px;padding:18px;margin-bottom:22px;box-shadow:0 1px 3px rgba(15,23,42,0.06)}
+    h2{font-size:18px;margin:0 0 10px}
+    .two-col{display:grid;grid-template-columns:2fr 1fr;gap:20px;align-items:start}
+    .metrics{display:flex;gap:12px;flex-wrap:wrap;margin:10px 0}
+    .metric{background:#f8fafb;padding:12px;border-radius:10px;min-width:140px;text-align:center}
+    .metric strong{display:block;color:var(--accent);font-size:18px}
+    .aside-card{background:#f8fafb;padding:14px;border-radius:12px}
+    .footer{margin-top:36px;padding-top:18px;border-top:1px solid #e5e7eb;color:var(--muted);text-align:center}
+    @media(max-width:820px){.two-col{grid-template-columns:1fr} header.hero{padding:40px 16px} header.hero h1{font-size:1.6rem}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <span class="chip">Mobile UX · Smart Assistant</span>
+      <span class="chip">Senior Product Designer</span>
+      <span class="chip">Duración: 1 semana</span>
+    </div>
+
+    <div class="private-banner">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" width="22" height="22">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 11c.828 0 1.5.672 1.5 1.5v2a1.5 1.5 0 01-3 0v-2c0-.828.672-1.5 1.5-1.5zM16.5 11V8.25A4.5 4.5 0 007.5 8.25V11M5.25 11h13.5a.75.75 0 01.75.75v8.25a.75.75 0 01-.75.75H5.25a.75.75 0 01-.75-.75v-8.25a.75.75 0 01.75-.75z"/>
+      </svg>
+      <span>Este proyecto es privado. Solicita acceso enviando un correo a 
+        <a href="mailto:leith@example.com">leith@example.com</a>.
+      </span>
+    </div>
+
+    <h1>Loop Routine — Asistente inteligente para rutinas diarias</h1>
+    <p>Aplicación que ayuda a las personas a mejorar sus hábitos diarios detectando patrones, ofreciendo recomendaciones personalizadas y optimizando sus desplazamientos y tiempo de manera inteligente.</p>
+    <div class="hero-kpi">
+      <div class="kpi"><strong>-40%</strong><div>Tiempo de configuración</div></div>
+      <div class="kpi"><strong>+28%</strong><div>Usuarios activos</div></div>
+      <div class="kpi"><strong>+86%</strong><div>Satisfacción visual</div></div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="card">
+      <h2>Contexto y objetivo</h2>
+      <p>Las personas repiten sus rutinas diarias sin evaluar si son eficientes o saludables. Loop Routine detecta esos patrones y ofrece sugerencias adaptadas al usuario, considerando tráfico, clima y objetivos personales, integrando bienestar y productividad.</p>
+    </section>
+
+    <div class="two-col">
+      <div>
+        <section class="card">
+          <h2>Problema</h2>
+          <p>Los usuarios no contaban con una herramienta que combinara movilidad y salud de manera personalizada. Las apps existentes solo ofrecían datos aislados, sin integrar contexto ni aprendizaje.</p>
+        </section>
+
+        <section class="card">
+          <h2>Investigación</h2>
+          <ul>
+            <li>12 entrevistas con usuarios (25–45 años).</li>
+            <li>Diarios de hábitos durante 1 semana.</li>
+            <li>Análisis competitivo: Google Maps, Apple Fitness.</li>
+          </ul>
+          <p><strong>Insights clave:</strong></p>
+          <ul>
+            <li>78 % solo cambia su ruta cuando algo falla.</li>
+            <li>65 % caminaría o iría en bici si fuera “fácil encajarlo”.</li>
+            <li>Ninguna app combina transporte y salud de forma personalizada.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Definición</h2>
+          <p>El usuario objetivo eran profesionales urbanos que buscaban ahorrar tiempo y estar más saludables sin esfuerzo. Se definieron tres necesidades principales:</p>
+          <ul>
+            <li>Actualizaciones en tiempo real.</li>
+            <li>Recomendaciones personalizadas.</li>
+            <li>Interfaz simple y no intrusiva.</li>
+          </ul>
+          <blockquote>“Loop Routine combina tus desplazamientos y objetivos de salud en un compañero inteligente y sencillo.”</blockquote>
+        </section>
+
+        <section class="card">
+          <h2>Ideación</h2>
+          <p>Durante un sprint creativo se propusieron conceptos enfocados en usabilidad y valor diario:</p>
+          <ul>
+            <li>Detección automática de rutinas y recomendaciones.</li>
+            <li>Dashboard con consejos y progreso diario.</li>
+            <li>Alertas sobre tráfico y clima integradas en el flujo.</li>
+            <li>Gamificación con logros y recompensas diarias.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Diseño</h2>
+          <p>El diseño buscó transmitir confianza y simplicidad. Se aplicaron estos principios:</p>
+          <ul>
+            <li>Paleta azul y blanca (claridad y calma).</li>
+            <li>Tipografía Inter para coherencia visual.</li>
+            <li>Mascota “búho” como asistente visual.</li>
+            <li>Reducción de pantallas de login (3 → 1).</li>
+            <li>Componentes modulares documentados.</li>
+          </ul>
+          <p><strong>Pantallas principales:</strong> onboarding en 3 pasos, dashboard con rutas y consejos, mapa inteligente, y sección de progreso.</p>
+        </section>
+
+        <section class="card">
+          <h2>Impacto</h2>
+          <div class="metrics">
+            <div class="metric"><strong>-40%</strong><div>Tiempo de configuración</div></div>
+            <div class="metric"><strong>+28%</strong><div>Usuarios activos</div></div>
+            <div class="metric"><strong>+86%</strong><div>Satisfacción visual</div></div>
+          </div>
+          <p>El rediseño y la arquitectura basada en rutinas aumentaron la retención y el uso diario. Los usuarios valoraron la claridad del diseño y la utilidad de las alertas inteligentes.</p>
+        </section>
+
+        <section class="card">
+          <h2>Reflexión</h2>
+          <p>Loop Routine demuestra que el diseño centrado en microhábitos puede tener un gran impacto. Integrar contexto, bienestar y tecnología ofrece una experiencia fluida y valiosa en el día a día.</p>
+        </section>
+      </div>
+
+      <aside>
+        <div class="aside-card card">
+          <h3>Datos del proyecto</h3>
+          <ul>
+            <li>Tipo: Mobile UX / Smart Assistant</li>
+            <li>Duración: 1 semana</li>
+            <li>Rol: UX Product Designer</li>
+            <li>Equipo: UX, Product Owner</li>
+            <li>Herramientas: Figma</li>
+          </ul>
+        </div>
+
+        <div class="aside-card" style="margin-top:14px">
+          <h3>Contacto</h3>
+          <p><strong>Leith Óscar</strong><br/>Senior Product Designer · Barcelona<br/><a href="mailto:leith@example.com">leith@example.com</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="footer">© Leith Óscar — Senior Product Designer</div>
+  </div>
+</body>
+</html>
